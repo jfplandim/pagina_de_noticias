@@ -1,0 +1,12 @@
+:root {
+    --cor-primaria: #004823;
+    --cor-secundaria: #5D4037;
+    --cor-terciaria: #8D2A3B;
+    --cor-neutra: #FDFDFD;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-neutra);
+    color: var(--cor-secundaria);
+}
