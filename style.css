@@ -1,0 +1,85 @@
+:root {
+    --cor-primaria: #004823;
+    --cor-secundaria: #5D4037;
+    --cor-terciaria: #8D2A3B;
+    --cor-neutra: #FDFDFD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-neutra);
+    color: var(--cor-secundaria);
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: var(--cor-primaria);
+    color: var(--cor-neutra);
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: var(--cor-terciaria);
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    list-style: none;
+}
+
+nav a {
+    color: var(--cor-neutra);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--cor-secundaria);
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-neutra);
+    padding: 30px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+footer a {
+    color: var(--cor-neutra);
+    text-decoration: none;
+}
