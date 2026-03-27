@@ -84,3 +84,22 @@ footer a {
     text-decoration: none;
 }
 
+.titulo-noticia{
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  color: #222;
+  margin-top: 8px;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.imagem img{
+    width: 50%;
+    height: 300px;
+    position: relative;
+    margin-left: 10px;
+
+}
+
+
