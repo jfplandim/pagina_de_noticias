@@ -97,10 +97,20 @@ nav a {
   transition: color 0.2s, border-color 0.2s;
 }
 
+<<<<<<< HEAD
 nav a:hover,
 nav a.active {
   color: var(--accent);
   border-bottom-color: var(--accent);
+=======
+.imagem img{
+     width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+
+
+>>>>>>> d305585 (ajustes na principal)
 }
 
 /* MAIN */
@@ -190,6 +200,7 @@ main {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
@@ -225,6 +236,18 @@ main {
 .card-info p {
   font-size: 13px;
   color: var(--text-body);
+=======
+  max-width: 720px;
+  margin: 24px 40px;
+  margin-top: 80px;
+}
+
+.imagem a{
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: 14px;
+>>>>>>> d305585 (ajustes na principal)
   line-height: 1.5;
   margin-bottom: 12px;
   flex: 1;
