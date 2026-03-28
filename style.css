@@ -20,10 +20,10 @@ body {
 .container {
     display: grid;
     grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main aside"
-    "footer footer";
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
 }
 
 header {
@@ -62,6 +62,54 @@ main {
 
 aside {
     grid-area: aside;
+    padding: 15px;
+    background-color: #f4f4f4; 
+    border-left: 1px solid #ddd;
+}
+
+.widget {
+    margin-bottom: 25px;
+}
+
+.widget h3 {
+    border-bottom: 2px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.lista-sidebar, .mais-lidas {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-sidebar li, .mais-lidas li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.lista-sidebar a, .mais-lidas a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-size: 14px;
+}
+
+/* Estilo do Banner de Ads */
+.banner-ads {
+    background-color: #eee;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.placeholder-ad {
+    height: 150px;
+    border: 2px dashed #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    margin-top: 10px;
 }
 
 footer {
@@ -94,12 +142,48 @@ footer a {
   text-decoration: none;
 }
 
-.imagem img{
-    width: 50%;
-    height: 300px;
-    position: relative;
-    margin-left: 10px;
+.imagem img {
+    width: 100%; 
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
 
 }
 
+.img-bet {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
+.img-bet:hover {
+    transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+    filter: brightness(1.1); /* Brilho leve ao passar o mouse */
+}
+
+/* Texto de aviso legal abaixo do banner */
+.aviso-aposta {
+    display: block;
+    font-size: 10px;
+    color: #888;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
