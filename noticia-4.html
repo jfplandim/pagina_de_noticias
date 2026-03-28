@@ -1,51 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adaptação Riot Games - The Digital Arboretum</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engenharia e Controle: Como o Valorant se Adaptou às Novas Leis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="principal.css">
 </head>
 <body>
+  <div class="container">
 
-    <div class="container">
+    <header>
+      <div class="logo">
+        <h1>The Digital <span>Arboretum</span></h1>
+        <p>Notícias do mundo dos jogos</p>
+      </div>
+    </header>
 
-        <header>
-            <h1>The Digital Arboretum</h1>
-            <p>Noticias do mundo dos jogos</p>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Reviews.html">Reviews</a></li>
-                <li><a href="eSports.html">eSports</a></li>
-                <li><a href="Lançamentos.html">Lançamentos</a></li>
-            </ul>
-        </nav>
+    <nav>
+      <ul>
+        <li><a href="Reviews.html">Reviews</a></li>
+        <li><a href="eSports.html">eSports</a></li>
+        <li><a href="Lançamentos.html" class="active">Lançamentos</a></li>
+      </ul>
+    </nav>
 
-        <main class="principal">
-            <article>
-                <h1>Engenharia e Controle: Como o Valorant se Adaptou às Novas Leis</h1>
-                <p><strong>Por: Ricardo | 27 de março de 2026</strong></p>
-                <img src="https://imgs.search.brave.com/JeVn8Pw9PHNvbzQbvu2Y2EtN_Ttx51z19Uvm_llrV6g/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvdmFs/b3JhbnQtcmV5bmEt/cG9zZS1pN3dva3Bj/dHdlejlqd3M3Lmpw/Zw" 
-                     alt="Valorant Reyna" 
-                     style="width: 100%; height: 350px; object-fit: cover; border-radius: 8px; margin: 20px 0;">
+    <main class="noticia-main">
 
-                <div class="conteudo-texto">
-                    <p>Diferente de outros títulos que apenas bloquearam o acesso, a equipe de desenvolvimento de software do Valorant trabalhou em uma atualização massiva de backend. O novo sistema de "Controle Parental" permite que os pais monitorem o tempo de jogo e restrinjam o chat de voz e texto de forma remota através de um aplicativo vinculado.</p>
-                    
-                    <p>Essa adaptação técnica exigiu uma reestruturação no banco de dados da Riot Games, criando um novo nível de hierarquia de contas. Agora, contas de menores de idade são tratadas como "contas dependentes", exigindo uma chave de segurança enviada ao e-mail dos responsáveis para cada nova transação ou amizade aceita dentro do jogo.</p>
-                    
-                    <p>A iniciativa foi elogiada por órgãos reguladores brasileiros, que viram no Valorant um exemplo de como a tecnologia pode ser usada para educar e proteger, em vez de apenas punir. Com essa atualização, a Riot garante que seu jogo de tiro tático continue acessível para o público jovem, desde que sob supervisão adequada.</p>
-                </div>
-                <a href="index.html" style="display: inline-block; margin-top: 30px; color: var(--cor-terciaria); font-weight: bold; text-decoration: none;">← Voltar para a Home</a>
-            </article>
-        </main>
-        <footer>
-            <h4>The Digital Arboretum</h4>
-            <p>© 2024 Seu Site de Games. Todos os direitos reservados.</p>
-        </footer>
+      <nav class="rastro">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <a href="Lançamentos.html">Lançamentos</a>
+        <span>›</span>
+        <span>Adaptação no Valorant</span>
+      </nav>
 
-    </div>
+      <article class="artigo">
+
+        <div class="artigo-header">
+          <span class="artigo-tag">Tecnologia</span>
+          <h1 class="artigo-titulo">
+            Engenharia e Controle: Como o Valorant se Adaptou às Novas Leis
+          </h1>
+          <div class="artigo-meta">
+            <span class="meta-autor">Por <strong>Ricardo Cronemberger</strong></span>
+            <span class="meta-sep">·</span>
+            <span class="meta-data">27 de março de 2026</span>
+            <span class="meta-sep">·</span>
+            <span class="meta-tempo">4 min de leitura</span>
+          </div>
+        </div>
+
+        <figure class="artigo-figura">
+          <img src="https://imgs.search.brave.com/JeVn8Pw9PHNvbzQbvu2Y2EtN_Ttx51z19Uvm_llrV6g/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvdmFs/b3JhbnQtcmV5bmEt/cG9zZS1pN3dva3Bj/dHdlejlqd3M3Lmpw/Zw" alt="Valorant Reyna" class="artigo-img"/>
+          <figcaption>Sistema de "Contas Dependentes" promete revolucionar o monitoramento de menores em jogos online.</figcaption>
+        </figure>
+
+        <p class="artigo-lead">
+          Diferente de outros títulos que apenas bloquearam o acesso, a equipe de desenvolvimento de software do Valorant trabalhou em uma atualização massiva de backend para implementar um sistema inovador de Controle Parental.
+        </p>
+
+        <div class="artigo-conteudo">
+          <p>O novo sistema permite que os pais monitorem o tempo de jogo e restrinjam o chat de voz e texto de forma remota através de um aplicativo vinculado à conta principal. Essa adaptação técnica exigiu uma reestruturação profunda no banco de dados da Riot Games, criando um novo nível de hierarquia de contas.</p>
+          
+          <h2>Contas Dependentes</h2>
+
+          <p>Agora, contas de menores de idade são tratadas como "contas dependentes". Isso significa que qualquer ação crítica, como uma nova transação financeira na loja do jogo ou até mesmo aceitar novos pedidos de amizade, exige uma chave de segurança enviada diretamente ao e-mail dos responsáveis legais.</p>
+
+          <blockquote class="artigo-quote">
+            "Foi um desafio de engenharia gigantesco garantir que a verificação parental ocorresse em tempo real sem causar lentidão nos servidores e sem atrapalhar a experiência competitiva."
+            <cite>— Equipe de Engenharia da Riot Games</cite>
+          </blockquote>
+
+          <p>A iniciativa foi amplamente elogiada por órgãos reguladores brasileiros, que viram no Valorant um exemplo claro de como a tecnologia pode ser usada para educar e proteger, em vez de apenas punir. Com essa atualização, a Riot garante que seu jogo de tiro tático continue acessível para o público jovem, desde que sob supervisão adequada.</p>
+        </div>
+
+        <div class="artigo-tags">
+          <span class="tag">Valorant</span>
+          <span class="tag">Riot Games</span>
+          <span class="tag">Engenharia</span>
+          <span class="tag">Software</span>
+        </div>
+
+        <div class="artigo-compartilhar">
+          <span>Compartilhar:</span>
+          <a href="#" class="share-btn">X / Twitter</a>
+          <a href="#" class="share-btn">Facebook</a>
+          <a href="#" class="share-btn">WhatsApp</a>
+        </div>
+
+      </article>
+
+      <section class="relacionadas">
+        <h2 class="relacionadas-titulo">Relacionadas</h2>
+        <div class="relacionadas-grid">
+          <a href="noticia-1.html" class="rel-card">
+            <div class="rel-img-wrap">
+              <img src="https://www.avast.com/hubfs/New_Avast_Academy/How%20facial%20recognition%20technology%20works/How_facial_recognition_technology_works_01.svg" alt="Biometria"/>
+            </div>
+            <div class="rel-info">
+              <span class="rel-tag">Tecnologia</span>
+              <h3>Biometria em Jogos online</h3>
+              <p>Entenda como funcionará a verificação facial obrigatória para jogadores.</p>
+            </div>
+          </a>
+          <a href="noticia-principal.html" class="rel-card">
+            <div class="rel-img-wrap">
+              <img src="league-of-legends.avif" alt="League of Legends"/>
+            </div>
+            <div class="rel-info">
+              <span class="rel-tag">Legislação</span>
+              <h3>Riot bloqueia jogos para menores</h3>
+              <p>LoL e Valorant passam a exigir verificação de idade no Brasil.</p>
+            </div>
+          </a>
+          <a href="noticia-3.html" class="rel-card">
+            <div class="rel-img-wrap">
+              <img src="https://imgs.search.brave.com/FEY4AcxpUXwsy3fQ0JRtqhJ-Rl-nL8KAUE2AIEhSqXo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA3LzYzLzMwLzgw/LzM2MF9GXzc2MzMw/ODA1NF9JbE5LU0pS/ZG1TQVJsY09oYUg4/eTd6YmVFVnRZT3Vy/cS5qcGc" alt="E-sports"/>
+            </div>
+            <div class="rel-info">
+              <span class="rel-tag">E-sports</span>
+              <h3>Crise no E-sports</h3>
+              <p>Afastamento de menores gera incerteza no cenário competitivo.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <aside>
+      <div class="widget">
+        <h3>Hoje</h3>
+        <p>28 de Março de 2026</p>
+      </div>
+      <div class="widget">
+        <h3>Categorias</h3>
+        <ul class="lista-sidebar">
+          <li><a href="Reviews.html">Reviews</a></li>
+          <li><a href="eSports.html">eSports</a></li>
+          <li><a href="Lançamentos.html">Lançamentos</a></li>
+          <li><a href="#">Hardware</a></li>
+        </ul>
+      </div>
+      <div class="banner-ads">
+        <p>Publicidade</p>
+        <a href="#" target="_blank">
+          <img src="download (5).png" alt="Apostas Esportivas" class="img-bet">
+        </a>
+        <span class="aviso-aposta">Jogue com responsabilidade | +18</span>
+      </div>
+      <div class="widget">
+        <h3>Mais Lidas</h3>
+        <ol class="mais-lidas">
+          <li><a href="noticia-principal.html">Riot bloqueia jogos para menores</a></li>
+          <li><a href="#">GTA VI: Novas imagens vazadas</a></li>
+          <li><a href="#">PS5 Pro ou PC Gamer em 2026?</a></li>
+        </ol>
+      </div>
+      <div class="widget">
+        <h3>Newsletter</h3>
+        <div class="newsletter-body">
+          <p>Receba as principais notícias do mundo dos games no seu e-mail.</p>
+          <input class="newsletter-input" type="email" placeholder="seu@email.com" />
+          <button class="newsletter-btn">Inscrever-se</button>
+        </div>
+      </div>
+    </aside>
+
+    <footer>
+      <div class="footer-logo">The Digital <span>Arboretum</span></div>
+      <div class="footer-copy">© 2026 Seu Site de Games. Todos os direitos reservados.</div>
+      <div class="footer-links">
+        <a href="sobre.html">Sobre nós</a>
+        <a href="editorial.html">Editorial</a>
+        <a href="privacidade.html">Política de privacidade</a>
+        <a href="contato.html">Contato</a>
+        <a href="#" target="_blank">X / Twitter</a>
+        <a href="#" target="_blank">Discord</a>
+      </div>
+    </footer>
+
+  </div>
 </body>
 </html>

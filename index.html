@@ -1,125 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Digital Arboretum</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Digital Arboretum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
 
-    <div class="container">
+    <header>
+      <div class="logo">
+        <h1>The Digital <span>Arboretum</span></h1>
+        <p>Notícias do mundo dos jogos</p>
+      </div>
+    </header>
 
-        <header>
-            <h1>The Digital Arboretum</h1>
-            <p>Noticias do mundo dos jogos</p>
-        </header>
+    <nav>
+      <ul>
+        <li><a href="Reviews.html" class="active">Reviews</a></li>
+        <li><a href="eSports.html">eSports</a></li>
+        <li><a href="Lançamentos.html">Lançamentos</a></li>
+      </ul>
+    </nav>
 
-        <nav>
-            <ul>
-                <li><a href="Reviews.html">Reviews</a></li>
-                <li><a href="eSports.html">eSports</a></li>
-                <li><a href="Lançamentos.html">Lançamentos</a></li>
-            </ul>
-        </nav>
+    <main>
+      <div class="hero">
+        <img src="league-of-legends.avif" alt="League of Legends" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="hero-tag">Destaque</span>
+          <a href="noticia-principal.html" class="hero-titulo">
+            'League of Legends' e outros games da Riot passam a ser bloqueados para menores de 18 anos no Brasil
+          </a>
+        </div>
+      </div>
 
-        <main>
-            <div class="imagem">
-                <img src="league-of-legends.avif" alt="league of legends">
-                <a   href="noticia-principal.html"  class="titulo-noticia">League of legends' e outros games da Riot passam a ser bloqueados para menores de 18 anos no Brasil</a>
-            </div>
-          
-<section class="noticias-secundarias">
-    <article class="card">
-        <img src="https://www.avast.com/hubfs/New_Avast_Academy/How%20facial%20recognition%20technology%20works/How_facial_recognition_technology_works_01.svg" alt="Biometria">
-        <div class="card-info">
+      <section class="noticias-secundarias">
+        <article class="card">
+          <img src="https://www.avast.com/hubfs/New_Avast_Academy/How%20facial%20recognition%20technology%20works/How_facial_recognition_technology_works_01.svg" alt="Biometria" class="card-img"/>
+          <div class="card-info">
             <h3>Biometria em Jogos online</h3>
             <p>Entenda como funcionará a verificação facial obrigatória para jogadores.</p>
-            <a href="noticia-1.html">Ler reportagem</a>
-        </div>
-    </article>
+            <a href="noticia-1.html" class="card-link">Ler reportagem</a>
+          </div>
+        </article>
 
-    <article class="card">
-        <img src="https://imgs.search.brave.com/c1Oq9ilxEIVB-RG1CUIa9HR4lTLbffYGT61srq13jBA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9leHRl/cm5hbC1wcmV2aWV3/LnJlZGQuaXQvaXNf/aTllMVhfcDktLU1w/X1p4cmNPNE5ackdp/b0hkc1hWTDdxeEZ1/OFVySS5qcGc_d2lk/dGg9NjQwJmNyb3A9/c21hcnQmYXV0bz13/ZWJwJnM9MmMyZGNl/OTY1MTZhM2Y2Y2Yy/NDFjNjkxZjhkOTMx/YTI1MzQyZWVmZA" alt="Loot Boxes">
-        <div class="card-info">
+        <article class="card">
+          <img src="https://imgs.search.brave.com/c1Oq9ilxEIVB-RG1CUIa9HR4lTLbffYGT61srq13jBA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9leHRl/cm5hbC1wcmV2aWV3/LnJlZGQuaXQvaXNf/aTllMVhfcDktLU1w/X1p4cmNPNE5ackdp/b0hkc1hWTDdxeEZ1/OFVySS5qcGc_d2lk/dGg9NjQwJmNyb3A9/c21hcnQmYXV0bz13/ZWJwJnM9MmMyZGNl/OTY1MTZhM2Y2Y2Yy/NDFjNjkxZjhkOTMx/YTI1MzQyZWVmZA" alt="Loot Boxes" class="card-img"/>
+          <div class="card-info">
             <h3>Fim das Loot Boxes</h3>
             <p>Lei proíbe caixas de recompensa para menores, visando combater o estímulo ao azar.</p>
-            <a href="noticia-2.html">Ler reportagem</a>
-        </div>
-    </article>
+            <a href="noticia-2.html" class="card-link">Ler reportagem</a>
+          </div>
+        </article>
 
-    <article class="card">
-        <img src="https://imgs.search.brave.com/FEY4AcxpUXwsy3fQ0JRtqhJ-Rl-nL8KAUE2AIEhSqXo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA3LzYzLzMwLzgw/LzM2MF9GXzc2MzMw/ODA1NF9JbE5LU0pS/ZG1TQVJsY09oYUg4/eTd6YmVFVnRZT3Vy/cS5qcGc" alt="E-sports">
-        <div class="card-info">
+        <article class="card">
+          <img src="https://imgs.search.brave.com/FEY4AcxpUXwsy3fQ0JRtqhJ-Rl-nL8KAUE2AIEhSqXo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA3LzYzLzMwLzgw/LzM2MF9GXzc2MzMw/ODA1NF9JbE5LU0pS/ZG1TQVJsY09oYUg4/eTd6YmVFVnRZT3Vy/cS5qcGc" alt="E-sports" class="card-img"/>
+          <div class="card-info">
             <h3>Crise no E-sports</h3>
             <p>Afastamento de jogadores menores de idade gera incerteza no cenário competitivo de LoL.</p>
-            <a href="noticia-3.html">Ler reportagem</a>
-        </div>
-    </article>
+            <a href="noticia-3.html" class="card-link">Ler reportagem</a>
+          </div>
+        </article>
 
-    <article class="card">
-        <img src="https://imgs.search.brave.com/JeVn8Pw9PHNvbzQbvu2Y2EtN_Ttx51z19Uvm_llrV6g/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvdmFs/b3JhbnQtcmV5bmEt/cG9zZS1pN3dva3Bj/dHdlejlqd3M3Lmpw/Zw" alt="Controle Parental">
-        <div class="card-info">
+        <article class="card">
+          <img src="https://imgs.search.brave.com/JeVn8Pw9PHNvbzQbvu2Y2EtN_Ttx51z19Uvm_llrV6g/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvdmFs/b3JhbnQtcmV5bmEt/cG9zZS1pN3dva3Bj/dHdlejlqd3M3Lmpw/Zw" alt="Controle Parental" class="card-img"/>
+          <div class="card-info">
             <h3>Adaptação da Riot Games</h3>
             <p>Como o Valorant adaptou seu código para o sistema de autorização parental.</p>
-            <a href="noticia-4.html">Ler reportagem</a>
-        </div>
-    </article>
-</section>
-            
-        </main>
+            <a href="noticia-4.html" class="card-link">Ler reportagem</a>
+          </div>
+        </article>
+      </section>
+    </main>
 
     <aside>
-    <div class="widget">
-        <h3>Hoje</h3>
-        <p>28 de Março de 2026</p>
-    </div>
 
-    <div class="widget">
-        <h3>Categorias</h3>
-        <ul class="lista-sidebar">
-            <li><a href="Reviews.html">Reviews</a></li>
-            <li><a href="eSports.html">eSports</a></li>
-            <li><a href="Lançamentos.html">Lançamentos</a></li>
-            <li><a href="#">Hardware</a></li>
-        </ul>
-    </div>
+  <div class="widget">
+    <h3>Hoje</h3>
+    <p>28 de Março de 2026</p>
+  </div>
 
-    <div class="banner-ads">
-        <p>Publicidade</p>
+  <div class="widget">
+    <h3>Categorias</h3>
+    <ul class="lista-sidebar">
+      <li><a href="Reviews.html">Reviews</a></li>
+      <li><a href="eSports.html">eSports</a></li>
+      <li><a href="Lançamentos.html">Lançamentos</a></li>
+      <li><a href="#">Hardware</a></li>
+    </ul>
+  </div>
+
+  <div class="banner-ads">
+    <p>Publicidade</p>
     <a href="https://www.bet365.bet.br/#/AVR/B144/" target="_blank">
-        <img src="download (5).png" alt="Apostas Esportivas" class="img-bet">
+      <img src="download (5).png" alt="Apostas Esportivas" class="img-bet">
     </a>
     <span class="aviso-aposta">Jogue com responsabilidade | +18</span>
-    </div>
+  </div>
 
-    <div class="widget">
-        <h3>Mais Lidas</h3>
-        <ol class="mais-lidas">
-            <li><a href="noticia-principal.html">Riot bloqueia jogos para menores</a></li>
-            <li><a href="https://www.techtudo.com.br/noticias/2026/03/gta-6-suposto-video-de-gameplay-vaza-na-internet-veja-imagens-edjogos.ghtml">GTA VI: Novas imagens vazadas</a></li>
-            <li><a href="https://www.infojd.com.br/blog/ps5-pro-ou-pc-gamer-em-2026-qual-vale-mais-a-pena-no-brasil-com-a-alta-dos-precos/?srsltid=AfmBOooUg2lXOYJN0HB3j63KOl7KtzsQNnk4oOjse9aaVnch_tbvG6zK" target="_blank"">PS5 Pro ou PC Gamer em 2026?</a></li>
-        </ol>
+  <div class="widget">
+    <h3>Mais Lidas</h3>
+    <ol class="mais-lidas">
+      <li><a href="noticia-principal.html">Riot bloqueia jogos para menores</a></li>
+      <li><a href="https://www.techtudo.com.br/noticias/2026/03/gta-6-suposto-video-de-gameplay-vaza-na-internet-veja-imagens-edjogos.ghtml">GTA VI: Novas imagens vazadas</a></li>
+      <li><a href="https://www.infojd.com.br/blog/ps5-pro-ou-pc-gamer-em-2026-qual-vale-mais-a-pena-no-brasil-com-a-alta-dos-precos/" target="_blank">PS5 Pro ou PC Gamer em 2026?</a></li>
+    </ol>
+  </div>
+
+  <div class="widget">
+    <h3>Newsletter</h3>
+    <div class="newsletter-body">
+      <p>Receba as principais notícias do mundo dos games no seu e-mail.</p>
+      <input class="newsletter-input" type="email" placeholder="seu@email.com" />
+      <button class="newsletter-btn">Inscrever-se</button>
     </div>
+  </div>
+
 </aside>
 
-        <footer>
-            <h4>The Digital Arboretum</h4>
-            <p>© 2024 Seu Site de Games. Todos os direitos reservados.</p>
-    
-            <ul>
-                <li><a href="sobre.html">Sobre nós</a></li>
-                <li><a href="editorial.html">Editorial</a></li>
-                <li><a href="privacidade.html">Política de privacidade</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+    <footer>
+      <div class="footer-logo">The Digital <span>Arboretum</span></div>
+      <div class="footer-copy">© 2026 Seu Site de Games. Todos os direitos reservados.</div>
+      <div class="footer-links">
+        <a href="sobre.html">Sobre nós</a>
+        <a href="editorial.html">Editorial</a>
+        <a href="privacidade.html">Política de privacidade</a>
+        <a href="contato.html">Contato</a>
+        <a href="https://twitter.com" target="_blank">X / Twitter</a>
+        <a href="https://discord.com" target="_blank">Discord</a>
+      </div>
+    </footer>
 
-            <ul>
-                <li><a href="https://twitter.com" target="_blank">X / Twitter</a></li>
-                <li><a href="https://discord.com" target="_blank">Discord</a></li>
-            </ul>
-        </footer>
-
-    </div>
+  </div>
 </body>
 </html>
