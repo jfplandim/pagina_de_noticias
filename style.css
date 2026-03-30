@@ -34,7 +34,6 @@ body {
   grid-template-columns: 1fr 300px;
 }
 
-/* HEADER */
 header {
   grid-area: header;
   background: var(--bg-header);
@@ -68,7 +67,6 @@ header {
   margin-top: 2px;
 }
 
-/* NAV */
 nav {
   grid-area: nav;
   background: var(--bg-nav);
@@ -103,14 +101,12 @@ nav a.active {
   border-bottom-color: var(--accent);
 }
 
-/* MAIN */
 main {
   grid-area: main;
   padding: 24px;
   background: var(--bg-body);
 }
 
-/* HERO */
 .hero {
   position: relative;
   border-radius: 10px;
@@ -176,7 +172,6 @@ main {
   color: var(--accent);
 }
 
-/* CARDS */
 .noticias-secundarias {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -258,7 +253,6 @@ main {
   color: #fff;
 }
 
-/* ASIDE */
 aside {
   grid-area: aside;
   padding: 24px 16px;
@@ -336,7 +330,6 @@ aside {
   background: var(--bg-elevated);
 }
 
-/* MAIS LIDAS */
 .mais-lidas {
   list-style: none;
   counter-reset: lidas;
@@ -378,7 +371,6 @@ aside {
   color: var(--accent);
 }
 
-/* BANNER ADS */
 .banner-ads {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -419,7 +411,6 @@ aside {
   border-top: 1px solid var(--border);
 }
 
-/* NEWSLETTER */
 .newsletter-body {
   padding: 14px;
   display: flex;
@@ -475,7 +466,6 @@ aside {
   background: #33eeff;
 }
 
-/* FOOTER */
 footer {
   grid-area: footer;
   background: var(--bg-footer);
@@ -522,7 +512,6 @@ footer {
   color: var(--accent);
 }
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
   .container {
     grid-template-areas:
